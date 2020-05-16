@@ -16,5 +16,8 @@ jobs:
           registry-url: http://infusos.com:4873/
       - run: yarn install
       - run: npm publish --registry http://infusos.com:4873 ${{ github.workspace }}/Assets/Core/EventBus/
+      - run: npm publish --registry http://infusos.com:4873 ${{ github.workspace }}/Assets/Core/BestHTTP/
+      - run: npm publish --registry http://infusos.com:4873 ${{ github.workspace }}/Assets/Core/Pathfinding/
+      - run: npm publish --registry http://infusos.com:4873 ${{ github.workspace }}/Assets/Core/DoTween/
         env:
           NODE_AUTH_TOKEN: ${{secrets.VERDACCIO_TOKEN}}
