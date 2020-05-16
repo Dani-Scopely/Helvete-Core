@@ -1,6 +1,6 @@
 {
   "name": "com.frozenbullets.helvete.pathfinding",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Helvete Pathfinding",
   "description": "Pathfinding custom implementation for Helvete Core Libraries",
   "unity": "2018.4",

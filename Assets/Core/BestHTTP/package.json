@@ -1,6 +1,6 @@
 {
   "name": "com.frozenbullets.helvete.besthttp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Helvete BestHTTP",
   "description": "BestHTTP custom implementation for Helvete Core Libraries",
   "unity": "2018.4",

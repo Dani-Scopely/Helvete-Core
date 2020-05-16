@@ -1,0 +1,23 @@
+name: Verdaccio
+
+on:
+  push:
+    branches:
+    - master
+    paths:
+    - Assets/Core/Pathfinding/package.json
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          always-auth: true
+          node-version: 12
+          registry-url: http://infusos.com:4873/
+      - run: yarn install
+      - run: npm publish --registry http://infusos.com:4873 ${{ github.workspace }}/Assets/Core/Pathfinding/
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.VERDACCIO_TOKEN}}
