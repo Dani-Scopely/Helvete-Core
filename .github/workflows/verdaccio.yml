@@ -16,6 +16,7 @@ jobs:
       - run: yarn install
       - run: echo "npmtest" > ../../../.npmrc
       - run: cat ../../../.npmrc
+      - run: realpath ../../../.npmrc
       - run: npm publish --registry http://infusos.com:4873 ${{ github.workspace }}/Assets/Core/EventBus/
         env:
           NODE_AUTH_TOKEN: ${{secrets.VERDACCIO_TOKEN}}
