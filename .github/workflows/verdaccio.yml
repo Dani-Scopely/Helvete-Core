@@ -2,8 +2,10 @@ name: Verdaccio
 
 on:
   pull_request: {}
-  push: { branches: [master] }
-
+  push: 
+    branches: master
+    paths: 
+      - Assets/Core/EventBus/package.json
 jobs:
   build:
     runs-on: ubuntu-latest
