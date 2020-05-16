@@ -1,4 +1,3 @@
 # Helvete-Core
-Helvete Core based on Verdaccio
-
-v.01
+![GitHub repo size](https://img.shields.io/github/repo-size/Dani-Scopely/Helvete-Core)
+Helvete Core 
