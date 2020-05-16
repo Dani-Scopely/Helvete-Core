@@ -11,10 +11,10 @@ jobs:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
+          always-auth: true
           node-version: 12
           registry-url: http://infusos.com:4873/
       - run: yarn install
-      - run: echo '//infusos.com:4873/:_authToken="tPnjXZAYhpEJcQ7tUpDsgrKDnsKDxbMvdJVOBIR004c="' > ../../../.npmrc
       - run: npm publish --registry http://infusos.com:4873 ${{ github.workspace }}/Assets/Core/EventBus/
         env:
           NODE_AUTH_TOKEN: ${{secrets.VERDACCIO_TOKEN}}
