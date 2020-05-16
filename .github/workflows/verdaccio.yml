@@ -14,6 +14,7 @@ jobs:
           node-version: 12
           registry-url: http://infusos.com:4873/
       - run: yarn install
+      - run: cat ${{github.workspace}}/../..npmrc
       - run: npm publish --registry http://infusos.com:4873 ${{ github.workspace }}/Assets/Core/EventBus/
         env:
           NODE_AUTH_TOKEN: ${{secrets.VERDACCIO_TOKEN}}
