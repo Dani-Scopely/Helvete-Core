@@ -1,11 +1,7 @@
 {
-    "name": "PackageToolsEditor",
-    "references": [
-        "Pathfinding"
-    ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "name": "Pathfinding",
+    "references": [],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

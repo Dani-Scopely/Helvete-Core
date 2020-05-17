@@ -1,0 +1,16 @@
+{
+  "name": "com.frozenbullets.helvete.servicelocator",
+  "version": "1.0.0",
+  "displayName": "Helvete ServiceLocator",
+  "description": "ServiceLocator implementation for Helvete Core Libraries",
+  "unity": "2018.4",
+  "keywords": [
+    "servicelocator",
+    "helvete"
+  ],
+  "author": {
+    "name": "Dani Santeugini",
+    "email": "hefesto84@gmail.com",
+    "url": "https://infusos.com"
+  }
+}
